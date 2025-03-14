@@ -1,3 +1,4 @@
+import 'package:flat69/screen/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -20,7 +21,9 @@ Widget appBarFlat69(var _h, var _w, int page) {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               GestureDetector(
-                onTap: () {},
+                onTap: () {
+                  Get.to(HomeScreen(), transition: Transition.fadeIn);
+                },
                 child: Text(
                   'Accueil',
                   style: TextStyle(
